@@ -17,7 +17,7 @@ header {
     text-align:center;
 }
 section {
-    max-width:900px;
+    max-width:1000px;
     margin:auto;
     padding:20px;
 }
@@ -25,10 +25,19 @@ section {
     background:white;
     padding:20px;
     margin-bottom:20px;
-    border-radius:10px;
+    border-radius:12px;
 }
 h2 {
     color:#27ae60;
+}
+.images {
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.images img {
+    border-radius:10px;
 }
 a {
     color:#27ae60;
@@ -40,15 +49,6 @@ footer {
     padding:15px;
     font-size:14px;
     color:#555;
-}
-.images {
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-.images img {
-    border-radius:10px;
 }
 </style>
 </head>
@@ -66,17 +66,19 @@ footer {
 <h2>Wat is de Schone Straat Challenge?</h2>
 <p>
 De Schone Straat Challenge is een wijkproject in Seghwaert waarbij bewoners worden
-gestimuleerd om zwerfafval op te ruimen en hun buurt schoon te houden.
+gestimuleerd om zwerfafval op te ruimen. Door afval in speciale prullenbakken te gooien
+en een QR-code te scannen, verdient je buurt punten.
 </p>
 </div>
 
 <div class="box">
 <h2>Hoe werkt het?</h2>
 <ol>
-<li>Gooi afval in de Schone Straat Prullenbak</li>
+<li>Gooi afval in een Schone Straat Prullenbak</li>
 <li>Scan de QR-code op de prullenbak</li>
-<li>Je straat verdient punten</li>
-<li>Bekijk de voortgang op het scorebord</li>
+<li>De punten worden toegevoegd aan jouw buurt</li>
+<li>Bekijk de stand op het scorebord</li>
+<li>Win samen prijzen voor jouw buurt</li>
 </ol>
 </div>
 
@@ -85,13 +87,17 @@ gestimuleerd om zwerfafval op te ruimen en hun buurt schoon te houden.
 
 <div class="images">
 
-<img src="https://raw.githubusercontent.com/mickvdveen-lab/Schone-straat-challenge/refs/heads/main/Kaart_pinnen.png"
-     alt="Kaart met voorbeeldlocaties van prullenbakken"
-     style="max-width:250px; width:100%;">
+<img
+src="https://raw.githubusercontent.com/mickvdeen-lab/Schone-straat-challenge/main/Locaties_prullenbakken.png"
+alt="Voorbeeldlocaties prullenbakken"
+style="max-width:450px; width:100%;"
+>
 
-<img src="https://raw.githubusercontent.com/mickvdveen-lab/Schone-straat-challenge/refs/heads/main/Locaties_prullenbakken.png"
-     alt="Ontwerp van de Schone Straat prullenbak"
-     style="max-width:250px; width:100%;">
+<img
+src="https://raw.githubusercontent.com/mickvdeen-lab/Schone-straat-challenge/main/prullenbakken-ontwerp.png"
+alt="Ontwerp van de prullenbak"
+style="max-width:280px; width:100%;"
+>
 
 </div>
 
@@ -101,12 +107,56 @@ Dit is een voorbeeldfoto van waar de prullenbakken zouden kunnen staan,
 en je ziet hier het type prullenbak dat voor dit project wordt gebruikt.
 </em>
 </p>
-
 </div>
 
+<div class="box">
+<h2>Buurten in Seghwaert</h2>
+<ul>
+<li>Seghwaert-Noord</li>
+<li>Seghwaert-Zuid</li>
+<li>Winkelcentrum Seghwaert</li>
+<li>Groene wijk Seghwaert</li>
+<li>Scholenomgeving Seghwaert</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>Puntensysteem</h2>
 <p>
-<a href="scorebord.html">👉 Bekijk het scorebord</a>
+Elke keer dat afval wordt weggegooid en de QR-code wordt gescand,
+verdient de buurt punten.
 </p>
+<ul>
+<li>1x afval weggooien = 1 punt</li>
+<li>10 punten = extra vermelding op het scorebord</li>
+<li>Maandelijkse bonus voor de schoonste buurt</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>Prijzen</h2>
+<p>
+De punten die worden verdiend, kunnen worden ingewisseld voor prijzen.
+Hoe meer punten een buurt heeft, hoe groter de beloning.
+</p>
+
+<ul>
+<li><strong>50 punten</strong> – Sticker “Schone Straat”</li>
+<li><strong>100 punten</strong> – Herbruikbare tas of sleutelhanger</li>
+<li><strong>250 punten</strong> – Sportbon of bioscoopbon</li>
+<li><strong>500 punten</strong> – Prijs voor de hele buurt (bijv. wijkactiviteit)</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>Scorebord</h2>
+<p>
+Bekijk hier welke buurt het beste scoort in de Schone Straat Challenge.
+</p>
+<p>
+<a href="scorebord.html">👉 Ga naar het scorebord</a>
+</p>
+</div>
 
 </section>
 
